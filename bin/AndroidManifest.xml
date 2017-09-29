@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kst.funddemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.kst.funddemo.common.application.ApplicationData"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.kst.funddemo.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.LoadMoreActivity"
+            android:label="@string/title_activity_load_more" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.BannerActivity"
+            android:label="@string/title_activity_banner" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.SlidingActivity"
+            android:label="@string/title_activity_sliding" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.DecentBannerActivity"
+            android:label="@string/title_activity_decent_banner" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.ProgressActivity"
+            android:label="@string/title_activity_decent_banner" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.GuidePageActivity"
+            android:label="@string/title_activity_guide_page" >
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.GuideDotActivity"
+            android:label="@string/title_activity_guide_dot" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kst.funddemo.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+    </application>
+
+</manifest>

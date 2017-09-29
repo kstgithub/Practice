@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/titlebar_bg_color" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/bookshelf_title"
+                android:textColor="@color/title_text_color_selcted"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/bookstore_title"
+                android:layout_toRightOf="@id/checkBox1"
+                android:textColor="@color/title_text_color_selcted"
+                android:paddingLeft="6dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/bookbar_title"
+                android:layout_toRightOf="@id/checkBox2"
+                android:textColor="@color/title_text_color_selcted"
+                android:paddingLeft="6dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="19sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f86963"
+        android:visibility="gone" />
+
+    <com.kst.funddemo.customControls.MainRootViewPager
+        android:id="@+id/root_layout"
+        android:layout_below="@+id/check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.kst.funddemo.customControls.MainRootViewPager>
+
+</RelativeLayout>

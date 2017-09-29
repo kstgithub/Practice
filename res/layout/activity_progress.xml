@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <com.kst.funddemo.customControls.ProgressButton
+          android:id="@+id/progressbar"
+          android:layout_width="80dp"
+          android:layout_height="33dp"
+          app:pb_text_size = "10sp"
+          app:pb_radius = "6dp"/>
+    
+    <com.kst.funddemo.customControls.ViewPractice
+          android:id="@+id/viewpractice"
+          android:layout_width="80dp"
+          android:layout_height="33dp"
+          android:layout_marginTop="10dp" />
+    
+
+</LinearLayout>

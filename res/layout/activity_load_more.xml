@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kst.funddemo.pulltorefresh.PtrClassicFrameLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" >
+
+        <com.kst.funddemo.pulltorefresh.LoadMoreListViewContainer
+            android:id="@+id/load_more_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.kst.funddemo.customControls.ObservableListView
+                android:id="@+id/category_details_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+        </com.kst.funddemo.pulltorefresh.LoadMoreListViewContainer>
+    </com.kst.funddemo.pulltorefresh.PtrClassicFrameLayout>
+
+</RelativeLayout>

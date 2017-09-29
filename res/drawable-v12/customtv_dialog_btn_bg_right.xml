@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is for Android 3.1+ refer to
+http://stackoverflow.com/questions/3056232/how-to-make-a-shape-with-left-top-round-rounded-corner-and-left-bottom-rounded-c
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+ 	<item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/btn_green_checked"/>
+            <corners android:bottomRightRadius="6dp"/>
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/btn_green_checked"/>
+            <corners android:bottomRightRadius="6dp"/>
+        </shape>
+    </item>
+    
+    <item android:state_window_focused="false" >
+        <shape>
+            <solid android:color="@color/btn_green_def"/>
+            <corners android:bottomRightRadius="6dp"/>
+        </shape>
+    </item>
+    
+</selector>
